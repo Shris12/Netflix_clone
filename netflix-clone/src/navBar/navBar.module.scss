@@ -1,0 +1,41 @@
+.navBar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 0 4%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 200;
+
+  .subSectionOne {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    a {
+      text-decoration: none;
+      color: whitesmoke;
+    }
+    .netflixLogo {
+      margin-right: 27px;
+      height: 26px;
+      object-fit: contain;
+    }
+  }
+  .subSectionTwo {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    a,
+    img {
+      text-decoration: none;
+      color: whitesmoke;
+    }
+  }
+  .userProfile {
+    height: 32px;
+    object-fit: contain;
+  }
+}
