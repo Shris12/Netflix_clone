@@ -6,11 +6,11 @@ function CarouselSlides({ items, heading, isPortrait = false }) {
   const [index, setIndex] = useState(0);
 
   const goToNextSlide = () => {
-    setIndex((prevIndex) => (prevIndex + 5 > items.length ? 0 : prevIndex + 5));
+    setIndex((prevIndex) => (prevIndex + 6 > items.length ? 0 : prevIndex + 5));
   };
 
   const goToPreviousSlide = () => {
-    setIndex((prevIndex) => (prevIndex - 5 <= 0 ? 0 : prevIndex - 5));
+    setIndex((prevIndex) => (prevIndex - 6 <= 0 ? 0 : prevIndex - 5));
   };
   return (
     <div className={styles.container}>

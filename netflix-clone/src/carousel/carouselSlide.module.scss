@@ -1,5 +1,6 @@
 .container {
   margin: 0;
+  margin-bottom: 20px;
   h3 {
     margin: 10px 0 10px 4%;
     color: white;
@@ -9,7 +10,7 @@
   .slideshow {
     position: relative;
     overflow: hidden;
-    height: 120px;
+    height: 125px;
 
     .isPortrait {
       img {

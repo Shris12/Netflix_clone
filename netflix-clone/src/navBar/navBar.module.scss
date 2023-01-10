@@ -1,5 +1,7 @@
 .navBar {
-  position: sticky;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
   padding: 0 4%;
@@ -8,7 +10,9 @@
   justify-content: space-between;
   align-items: center;
   font-size: 12px;
-  font-weight: 200;
+  font-weight: 400;
+  background: linear-gradient(to bottom, #141414, rgba(128, 128, 128, 0.01));
+  // background: transparent;
 
   .subSectionOne {
     display: flex;

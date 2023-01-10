@@ -6,45 +6,41 @@
 body {
   background-color: rgb(213, 213, 213);
   font-family: sans-serif, monospace;
-  font-size: 24px;
+  font-size: 20px;
   background-color: #141414;
 }
 
 .selectedMovie {
+  padding-top: 150px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  height: 80vh;
   .selectedMovieImg {
-    height: 70vh;
-    img {
-      z-index: -1;
-      position: absolute;
-      top: 0;
-      width: 100%;
-      object-fit: cover;
-      max-height: 100vh;
-    }
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+    max-height: 100vh;
   }
   .filmLogo {
-    position: absolute;
-    top: 230px;
     padding: 0 4%;
     width: 50%;
-    display: flex;
-    justify-content: flex-start;
     color: whitesmoke;
-    font-size: 38px;
-    font-weight: 800;
+    font-size: 30px;
+    font-weight: 600;
   }
   .filmDescription {
-    top: 300px;
-    position: absolute;
     width: 50%;
     color: whitesmoke;
     padding: 0 4%;
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 12px;
+    font-weight: 400;
   }
   .btnGroup {
-    top: 390px;
-    position: absolute;
     display: flex;
     justify-content: left;
     gap: 10px;
@@ -85,5 +81,26 @@ body {
 
   .infoBtn:hover {
     background-color: rgba(109, 109, 110, 0.4);
+  }
+
+  .heroSectionMovieDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .bannerFadeBottom {
+    position: absolute;
+    bottom: -110px;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(44, 44, 44, 0.381),
+      #141414
+    );
   }
 }
